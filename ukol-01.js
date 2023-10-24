@@ -5,5 +5,3 @@ const email = {
     userFirstName: firstName.slice(0, 3),
     userSurname: surname.slice(0, 5),
 };
-
-document.body.innerHTML += `<p> ${(userSurname + userFirstName).toLowerCase()} @fit.cvut.cz</p>`
