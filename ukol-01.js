@@ -6,4 +6,4 @@ const email = {
     userSurname: surname.slice(0, 5),
 };
 
-document.body.innerHTML += `<p> ${userSurname + userFirstName} @fit.cvut.cz</p>`;
+document.body.innerHTML += `<p> ${(email.userSurname + email.userFirstName).toLowerCase()}@fit.cvut.cz</p>`;
