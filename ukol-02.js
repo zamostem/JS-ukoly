@@ -15,4 +15,4 @@ if (pocet < 50) {
 
 const cenaCelkem = cenaKs * pocet;
 
-document.body.innerHTML += `<p>Celková cena objednávky: ${cenaCelkem} Kč.</p>`
+document.body.innerHTML += `<p>Celková cena objednávky: ${cenaCelkem} Kč.</p>`;
