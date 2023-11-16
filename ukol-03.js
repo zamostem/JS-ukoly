@@ -1,19 +1,12 @@
-const date = prompt("Zadej datum ve formátu DD.MM.YYYY:");
-
-/* let parsedDate = {
-    day: "",
-    month: "",
-    year: "",
-  };
-  */
-
-const parseDate = (date) => {
-    parsedDate = {
-        day: date.slice(0, 2),
-        month: date.slice(3, 5),
-        year: date.slice(6, 10),
-    }
+const parseDate = () => {
+    const inputDate = prompt("Zadej datum ve formátu DD.MM.YYYY:");
+    const date = {
+        day: inputDate.slice(0, 2),
+        month: inputDate.slice(3, 5),
+        year: inputDate.slice(6, 10),
+    };
+    return date;
 };
 
-// document.body.innerHTML += `<p>day: ${day}, month: ${month}, year: ${year}</p>`
-document.body.innerHTML = parseDate("22.02.1990")
+const result = parseDate();
+document.body.innerHTML += `<p>day: ${result.day}, month: ${result.month}, year: ${result.year}</p>`
