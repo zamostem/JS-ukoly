@@ -9,4 +9,4 @@ const parseDate = () => {
 };
 
 const result = parseDate();
-document.body.innerHTML += `<p>day: ${result.day}, month: ${result.month}, year: ${result.year}</p>`
+document.body.innerHTML += `<p>day: ${Number(result.day)}, month: ${Number(result.month)}, year: ${Number(result.year)}</p>`
